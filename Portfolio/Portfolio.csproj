@@ -301,7 +301,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Downloads\CV_Martin_Mitrovski_MK.doc" />
     <Content Include="Downloads\CV_Martin_Mitrovski_ENG.doc" />
+    <None Include="Properties\PublishProfiles\mitrovskimartin4u - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\mitrovskimartin4u - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\mitrovskimartin4u - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\mitrovskimartin4u - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
