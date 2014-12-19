@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3069898-EE97-459C-A463-27ED3ED77AC6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Portfolio</RootNamespace>
+    <AssemblyName>Portfolio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\BruceLee.jpg" />
+    <Content Include="Images\Churchill.jpeg" />
+    <Content Include="Images\Confucius.jpg" />
+    <Content Include="Images\design-bg.gif" />
+    <Content Include="Images\Duma.jpg" />
+    <Content Include="Images\Einstein.jpg" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\Plato.jpg" />
+    <Content Include="Images\PortfolioImages\ball-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\ball-1.jpg" />
+    <Content Include="Images\PortfolioImages\ball-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\ball-2.jpg" />
+    <Content Include="Images\PortfolioImages\ball-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\ball-3.jpg" />
+    <Content Include="Images\PortfolioImages\ball-4-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\ball-4.jpg" />
+    <Content Include="Images\PortfolioImages\blues-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\blues-1.jpg" />
+    <Content Include="Images\PortfolioImages\blues-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\blues-2.jpg" />
+    <Content Include="Images\PortfolioImages\blues-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\blues-3.jpg" />
+    <Content Include="Images\PortfolioImages\blunt-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\blunt-1.jpg" />
+    <Content Include="Images\PortfolioImages\blunt-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\blunt-2.jpg" />
+    <Content Include="Images\PortfolioImages\blunt-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\blunt-3.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-1.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-2.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-3.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-4-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-4.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-5-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-5.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-6-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-6.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-7-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-7.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-8-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\bubamara-8.jpg" />
+    <Content Include="Images\PortfolioImages\cent-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\cent-1.jpg" />
+    <Content Include="Images\PortfolioImages\cent-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\cent-2.jpg" />
+    <Content Include="Images\PortfolioImages\cent-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\cent-3.jpg" />
+    <Content Include="Images\PortfolioImages\duran-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\duran-1.jpg" />
+    <Content Include="Images\PortfolioImages\duran-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\duran-2.jpg" />
+    <Content Include="Images\PortfolioImages\duran-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\duran-3.jpg" />
+    <Content Include="Images\PortfolioImages\dziboni-1-thumb.png" />
+    <Content Include="Images\PortfolioImages\dziboni-1.png" />
+    <Content Include="Images\PortfolioImages\dziboni-2-thumb.png" />
+    <Content Include="Images\PortfolioImages\dziboni-2.png" />
+    <Content Include="Images\PortfolioImages\dziboni-3-thumb.png" />
+    <Content Include="Images\PortfolioImages\dziboni-3.png" />
+    <Content Include="Images\PortfolioImages\esma-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\esma-1.jpg" />
+    <Content Include="Images\PortfolioImages\esma-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\esma-2.jpg" />
+    <Content Include="Images\PortfolioImages\gori-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\gori-1.jpg" />
+    <Content Include="Images\PortfolioImages\gori-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\gori-2.jpg" />
+    <Content Include="Images\PortfolioImages\gori-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\gori-3.jpg" />
+    <Content Include="Images\PortfolioImages\gori-4-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\gori-4.jpg" />
+    <Content Include="Images\PortfolioImages\hiphop-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\hiphop-1.jpg" />
+    <Content Include="Images\PortfolioImages\hiphop-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\hiphop-2.jpg" />
+    <Content Include="Images\PortfolioImages\idol-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\idol-1.jpg" />
+    <Content Include="Images\PortfolioImages\idol-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\idol-2.jpg" />
+    <Content Include="Images\PortfolioImages\idol-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\idol-3.jpg" />
+    <Content Include="Images\PortfolioImages\idol-4-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\idol-4.jpg" />
+    <Content Include="Images\PortfolioImages\idol-5-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\idol-5.jpg" />
+    <Content Include="Images\PortfolioImages\idol-6-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\idol-6.jpg" />
+    <Content Include="Images\PortfolioImages\idol-7-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\idol-7.jpg" />
+    <Content Include="Images\PortfolioImages\jazz-1-thumb.png" />
+    <Content Include="Images\PortfolioImages\jazz-1.png" />
+    <Content Include="Images\PortfolioImages\jazz-2-thumb.png" />
+    <Content Include="Images\PortfolioImages\jazz-2.png" />
+    <Content Include="Images\PortfolioImages\jazz-3-thumb.png" />
+    <Content Include="Images\PortfolioImages\jazz-3.png" />
+    <Content Include="Images\PortfolioImages\jazz-4-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\jazz-4.jpg" />
+    <Content Include="Images\PortfolioImages\jazz-5-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\jazz-5.jpg" />
+    <Content Include="Images\PortfolioImages\jazz-6-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\jazz-6.jpg" />
+    <Content Include="Images\PortfolioImages\karolina-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\karolina-1.jpg" />
+    <Content Include="Images\PortfolioImages\karolina-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\karolina-2.jpg" />
+    <Content Include="Images\PortfolioImages\kemal-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\kemal-1.jpg" />
+    <Content Include="Images\PortfolioImages\kemal-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\kemal-2.jpg" />
+    <Content Include="Images\PortfolioImages\kemal-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\kemal-3.jpg" />
+    <Content Include="Images\PortfolioImages\maraja-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\maraja-1.jpg" />
+    <Content Include="Images\PortfolioImages\maraja-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\maraja-2.jpg" />
+    <Content Include="Images\PortfolioImages\milioner-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\milioner-1.jpg" />
+    <Content Include="Images\PortfolioImages\milioner-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\milioner-2.jpg" />
+    <Content Include="Images\PortfolioImages\milioner-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\milioner-3.jpg" />
+    <Content Include="Images\PortfolioImages\neotel-1-thumb.png" />
+    <Content Include="Images\PortfolioImages\neotel-1.png" />
+    <Content Include="Images\PortfolioImages\neotel-2-thumb.png" />
+    <Content Include="Images\PortfolioImages\neotel-2.png" />
+    <Content Include="Images\PortfolioImages\neotel-3-thumb.png" />
+    <Content Include="Images\PortfolioImages\neotel-3.png" />
+    <Content Include="Images\PortfolioImages\neotel-4-thumb.png" />
+    <Content Include="Images\PortfolioImages\neotel-4.png" />
+    <Content Include="Images\PortfolioImages\nokaut-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\nokaut-1.jpg" />
+    <Content Include="Images\PortfolioImages\nokaut-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\nokaut-2.jpg" />
+    <Content Include="Images\PortfolioImages\nokaut-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\nokaut-3.jpg" />
+    <Content Include="Images\PortfolioImages\off-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\off-1.jpg" />
+    <Content Include="Images\PortfolioImages\ohrid-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\ohrid-1.jpg" />
+    <Content Include="Images\PortfolioImages\ohrid-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\ohrid-2.jpg" />
+    <Content Include="Images\PortfolioImages\ohrid-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\ohrid-3.jpg" />
+    <Content Include="Images\PortfolioImages\opusteno-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\opusteno-1.jpg" />
+    <Content Include="Images\PortfolioImages\pivo-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\pivo-1.jpg" />
+    <Content Include="Images\PortfolioImages\pivo-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\pivo-2.jpg" />
+    <Content Include="Images\PortfolioImages\pivo-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\pivo-3.jpg" />
+    <Content Include="Images\PortfolioImages\radio-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\radio-1.jpg" />
+    <Content Include="Images\PortfolioImages\radio-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\radio-2.jpg" />
+    <Content Include="Images\PortfolioImages\sergej-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\sergej-1.jpg" />
+    <Content Include="Images\PortfolioImages\sergej-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\sergej-2.jpg" />
+    <Content Include="Images\PortfolioImages\tikves-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tikves-1.jpg" />
+    <Content Include="Images\PortfolioImages\tikves-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tikves-2.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-1.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-2.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-3.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-4-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-4.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-5-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-5.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-6-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tinex-6.jpg" />
+    <Content Include="Images\PortfolioImages\tose-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tose-1.jpg" />
+    <Content Include="Images\PortfolioImages\tose-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tose-2.jpg" />
+    <Content Include="Images\PortfolioImages\tose-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\tose-3.jpg" />
+    <Content Include="Images\PortfolioImages\trkalo-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\trkalo-1.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-1.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-2.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-3.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-4-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-4.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-5-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\vinski-5.jpg" />
+    <Content Include="Images\PortfolioImages\zaz-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\zaz-1.jpg" />
+    <Content Include="Images\PortfolioImages\zaz-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\zaz-2.jpg" />
+    <Content Include="Images\PortfolioImages\zaz-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\zaz-3.jpg" />
+    <Content Include="Images\PortfolioImages\zen-1-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\zen-1.jpg" />
+    <Content Include="Images\PortfolioImages\zen-2-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\zen-2.jpg" />
+    <Content Include="Images\PortfolioImages\zen-3-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\zen-3.jpg" />
+    <Content Include="Images\PortfolioImages\zen-4-thumb.jpg" />
+    <Content Include="Images\PortfolioImages\zen-4.jpg" />
+    <Content Include="Images\profilepic.jpg" />
+    <Content Include="Images\Rice.jpg" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="MainPage_MK.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Downloads\CV_Martin_Mitrovski_MK.doc" />
+    <Content Include="Downloads\CV_Martin_Mitrovski_ENG.doc" />
+    <None Include="Properties\PublishProfiles\mitrovskimartin4u - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\mitrovskimartin4u - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.easing.js" />
+    <Content Include="Scripts\jquery.easing.min.js" />
+    <Content Include="Scripts\jquery.scrollUp.js" />
+    <Content Include="Scripts\marinka.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\toggle.js" />
+    <Content Include="Scripts\scrolling-nav.js" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage_MK.aspx.cs">
+      <DependentUpon>MainPage_MK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage_MK.aspx.designer.cs">
+      <DependentUpon>MainPage_MK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52142</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3374/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
